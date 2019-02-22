@@ -14,6 +14,10 @@
 		30BA7C3E221DDC0C00DCDABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BA7C3C221DDC0C00DCDABE /* LaunchScreen.storyboard */; };
 		30BA7C49221DDC0C00DCDABE /* EverydayNormalRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA7C48221DDC0C00DCDABE /* EverydayNormalRxSwiftTests.swift */; };
 		30BA7C54221DDC0C00DCDABE /* EverydayNormalRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA7C53221DDC0C00DCDABE /* EverydayNormalRxSwiftUITests.swift */; };
+		30BA7C71221DDF6D00DCDABE /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30BA7C6E221DDF2100DCDABE /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30BA7C73221DDF6D00DCDABE /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30BA7C68221DDE5000DCDABE /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30BA7C74221DDFA900DCDABE /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BA7C6E221DDF2100DCDABE /* RxCocoa.framework */; };
+		30BA7C75221DDFA900DCDABE /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BA7C68221DDE5000DCDABE /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +37,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		30BA7C64221DDD2200DCDABE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30BA7C73221DDF6D00DCDABE /* RxSwift.framework in Embed Frameworks */,
+				30BA7C71221DDF6D00DCDABE /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		301DF5AF221FD12E0012161E /* DebounceAndThrottle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DebounceAndThrottle.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		301DF5B1221FD8EE0012161E /* DriverAndSignal.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DriverAndSignal.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		30BA7C30221DDC0B00DCDABE /* EverydayNormalRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverydayNormalRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BA7C33221DDC0B00DCDABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30BA7C35221DDC0B00DCDABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +68,14 @@
 		30BA7C4F221DDC0C00DCDABE /* EverydayNormalRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverydayNormalRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BA7C53221DDC0C00DCDABE /* EverydayNormalRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayNormalRxSwiftUITests.swift; sourceTree = "<group>"; };
 		30BA7C55221DDC0C00DCDABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30BA7C68221DDE5000DCDABE /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		30BA7C6E221DDF2100DCDABE /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		30BA7C77221F7B6000DCDABE /* Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		30D599CE221FAD1200E36296 /* Disposables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Disposables.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		30D599CF221FAD6400E36296 /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		30D599D1221FB91F00E36296 /* SingleCompletableMaybe.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SingleCompletableMaybe.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		30D599D2221FC44D00E36296 /* Schedulers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Schedulers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		30D599D3221FC9FE00E36296 /* TimerAndInterval.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimerAndInterval.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BA7C74221DDFA900DCDABE /* RxCocoa.framework in Frameworks */,
+				30BA7C75221DDFA900DCDABE /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +112,7 @@
 				30BA7C47221DDC0C00DCDABE /* EverydayNormalRxSwiftTests */,
 				30BA7C52221DDC0C00DCDABE /* EverydayNormalRxSwiftUITests */,
 				30BA7C31221DDC0B00DCDABE /* Products */,
+				30BA7C67221DDE5000DCDABE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +129,7 @@
 		30BA7C32221DDC0B00DCDABE /* EverydayNormalRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				30BA7C6C221DDEE900DCDABE /* Playground */,
 				30BA7C33221DDC0B00DCDABE /* AppDelegate.swift */,
 				30BA7C35221DDC0B00DCDABE /* ViewController.swift */,
 				30BA7C37221DDC0B00DCDABE /* Main.storyboard */,
@@ -125,6 +158,30 @@
 			path = EverydayNormalRxSwiftUITests;
 			sourceTree = "<group>";
 		};
+		30BA7C67221DDE5000DCDABE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30BA7C6E221DDF2100DCDABE /* RxCocoa.framework */,
+				30BA7C68221DDE5000DCDABE /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30BA7C6C221DDEE900DCDABE /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				30BA7C77221F7B6000DCDABE /* Observable.playground */,
+				30D599CE221FAD1200E36296 /* Disposables.playground */,
+				30D599CF221FAD6400E36296 /* Operators.playground */,
+				30D599D2221FC44D00E36296 /* Schedulers.playground */,
+				30D599D1221FB91F00E36296 /* SingleCompletableMaybe.playground */,
+				30D599D3221FC9FE00E36296 /* TimerAndInterval.playground */,
+				301DF5AF221FD12E0012161E /* DebounceAndThrottle.playground */,
+				301DF5B1221FD8EE0012161E /* DriverAndSignal.playground */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +192,8 @@
 				30BA7C2C221DDC0B00DCDABE /* Sources */,
 				30BA7C2D221DDC0B00DCDABE /* Frameworks */,
 				30BA7C2E221DDC0B00DCDABE /* Resources */,
+				30BA7C64221DDD2200DCDABE /* Embed Frameworks */,
+				30BA7C66221DDD8A00DCDABE /* Copy Framework */,
 			);
 			buildRules = (
 			);
@@ -250,6 +309,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30BA7C66221DDD8A00DCDABE /* Copy Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "Copy Framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30BA7C2C221DDC0B00DCDABE /* Sources */ = {
@@ -433,6 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EverydayNormalRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +536,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EverydayNormalRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
